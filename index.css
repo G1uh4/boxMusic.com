@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #660066;
+    color: white;
+}
+
+@media only screen and (min-width: 800px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.fa-music{
+    color: #FFD700;
+    transition: 500ms;
+}
+
+.fa-music:hover,
+.fa-music:active{
+    font-size: 1.3em;
+}
+
+.fa-compact-disc{
+    color: #FFD700;
+}
+
+
+.animationIcon{
+    display: flex;
+    justify-content: center;
+    width: 5em;
+    margin-left: 8.5em;
+    margin-top: 4em;
+    animation: soundIcon 500ms forwards;
+    z-index: 0;
+}
+
+.animationIconTwo{
+    width: 5em;
+}
+
+
+@keyframes soundIcon {
+    0%{
+      margin-top: 4em;
+      opacity: 0;
+      display: flex;
+    }
+    50%{
+        margin-top: 2em;
+        opacity: 1.0;
+        display: flex;
+      }
+    100%{
+        opacity: 0;
+        display: none;
+        
+    }
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 2.5em;
+    justify-content: center;
+    margin-top: -3em;
+}
+
+@media only screen and (max-width: 700px) {
+    .infoContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.highText1,
+.highText2{
+    color: red;
+    font-size: 1.4em;
+    display: block;
+}
+
+
+
+/* Music Boxes */
+
+.displayMusicBoxes{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 2em;
+}
+
+@media only screen and (min-width: 200px) {
+    .displayMusicBoxes{
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+}
+
+.animationContainer{
+    display: flex;
+    justify-content: center;
+    margin-right: 10em;
+    margin-bottom: 13em;
+}
+
+.box1{
+    background-color: #0000FF;
+    width: 10em;
+    height: 10em;
+    transition: 500ms;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.box1:hover,
+.box1:active{
+    width: 10.5em;
+    height: 10.5em;
+    box-shadow: 4px 5px 10px;
+}
+
+.box2{
+    background-color: #b0e0e6;
+    width: 10em;
+    height: 10em;
+    transition: 500ms;
+}
+
+.box2:hover,
+.box2:active{
+    width: 10.5em;
+    height: 10.5em;
+    cursor: pointer;
+    box-shadow: 4px 5px 10px;
+}
+
+.box3{
+    background-color: #00ff00;
+    width: 10em;
+    height: 10em;
+    transition: 500ms;
+}
+
+.box3:hover,
+.box3:active{
+    width: 10.5em;
+    height: 10.5em;
+    cursor: pointer;
+    box-shadow: 4px 5px 10px;
+}
+
+.box4{
+    background-color: #f6546a;
+    width: 10em;
+    height: 10em;
+    transition: 500ms;
+}
+
+.box4:hover,
+.box4:active{
+    width: 10.5em;
+    height: 10.5em;
+    cursor: pointer;
+    box-shadow: 4px 5px 10px;
+}
+
+.box5{
+    background-color: #088da5;
+    width: 10em;
+    height: 10em;
+    transition: 500ms;
+}
+
+.box5:hover,
+.box5:active{
+    width: 10.5em;
+    height: 10.5em;
+    cursor: pointer;
+    box-shadow: 4px 5px 10px;
+}
+
+.box6{
+    background-color: #daa520;
+    width: 10em;
+    height: 10em;
+    transition: 500ms;
+}
+
+.box6:hover,
+.box6:active{
+    width: 10.5em;
+    height: 10.5em;
+    cursor: pointer;
+    box-shadow: 4px 5px 10px;
+}
+
+.box7{
+    background-color: #0e2f44;
+    width: 10em;
+    height: 10em;
+    transition: 500ms;
+}
+
+.box7:hover,
+.box7:active{
+    width: 10.5em;
+    height: 10.5em;
+    cursor: pointer;
+    box-shadow: 4px 5px 10px;
+}
+
+/* Music Boxes END */
